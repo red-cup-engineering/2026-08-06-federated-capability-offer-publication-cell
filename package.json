@@ -11,10 +11,10 @@
     "capability-cell",
     "rmn"
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/federated-capability-offer-publication-cell.git"
+    "url": "git+https://github.com/red-cup-engineering/2026-08-06-federated-capability-offer-publication-cell.git"
   },
   "publishConfig": {
     "access": "public",
@@ -33,5 +33,9 @@
   },
   "engines": {
     "node": ">=22"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
