@@ -1,0 +1,41 @@
+{
+  "name": "@red-cup-engineering/federated-capability-offer-publication-cell",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Serves one exact canonical capability offer as one public ActivityPub actor outbox without acquiring inbox, delivery-queue, or foreign publication authority.",
+  "keywords": [
+    "activitypub",
+    "capability-offer",
+    "outbox",
+    "capability-cell",
+    "rmn"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/2026-08-06-federated-capability-offer-publication-cell.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./src/serve-public-capability-offer-outbox.mjs"
+  },
+  "bin": {
+    "serve-public-capability-offer-outbox": "./scripts/server.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/serve-public-capability-offer-outbox.mjs && node --check scripts/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "verify": "npm run check && npm test && npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}
